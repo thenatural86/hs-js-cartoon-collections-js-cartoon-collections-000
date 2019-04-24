@@ -10,28 +10,28 @@ function dwarfRollCall (dwarves) {
 function summonCaptainPlanet(planeteerCalls){
    let newArray = [];
     for (let i = 0; i < planeteerCalls.length; i++) {
-      newArray.push(planeteerCalls[i].toString().toUpperCase() + '!') ;
+      newArray.push(planeteerCalls[i].toUpperCase() + '!') ;
     }
     console.log(newArray);
     return newArray;
 }
 
 function longPlaneteerCalls(words) {
-  if (words.length > 4) {
-    console.log(words);
-    return true;
-  } else {
+  for(let i = 0; i < words.length; i++){
+    if (words[i].length > 4) {
+      console.log(words);
+      return true;
+    } 
     return false;
   }
 }
-
 function findTheCheese (foods) {
-if (foods.includes('cheddar' || 'gouda' || 'camebert' )) {
-  return 'cheddar' || 'gouda' || 'camebert' ;
-} else {
-  return 'no cheese!';
- }
+  for(let i = 0; i < foods.length; i++) {
+    if (foods[i] === 'cheddar' || foods[i] === 'gouda' || foods[i] === 'camebert' ) {
+      return foods[i];
+    } 
+  }
+    return 'no cheese!';
 }
-
 
 
