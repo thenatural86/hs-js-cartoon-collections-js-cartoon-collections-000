@@ -38,7 +38,7 @@ function longPlaneteerCalls(words) {
 function findTheCheese (foods) {
   //iterate through array, if currrent element is cheese return element
   for(let i = 0; i < foods.length; i++) {
-    if (foods[i] === 'cheddar' || foods[i] === 'gouda' || foods[i] === 'camebert' ) {
+    if (foods[i] === 'cheddar' || foods[i] === 'gouda' || foods[i] === 'camebert' || foods([i]) === 'swiss') {
       console.log(foods);
       return foods[i];
     } 
