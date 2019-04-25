@@ -57,9 +57,10 @@ function wordsThatStartWithB(words){
   let newArray = [];
   for(let i = 0; i < words.length; i++) {
     if(words[i][0] === 'b') {
-       return newArray.push(words[i]);
+      newArray.push(words[i]);
     }
   }
+   return newArray;
 }
 
 wordsThatStartWithB(['banana', 'cherry', 'orange']) // ['banana']
