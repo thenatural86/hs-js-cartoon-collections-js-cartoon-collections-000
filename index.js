@@ -54,11 +54,15 @@ function findTheCheese (foods) {
 
 
 function wordsThatStartWithB(words){
-  
+  for(let i = 0; i < words.length; i++) {
+    if(words[0] === 'b') {
+      return words[i];
+    }
+  }
 }
 
 wordsThatStartWithB(['banana', 'cherry', 'orange']) // ['banana']
-wordsThatStartWithB(['brian', 'bobby', 'james'])
+wordsThatStartWithB(['brian', 'bobby', 'james']) // ['brian', 'bobby']
 
 
 
