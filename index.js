@@ -58,6 +58,7 @@ function wordsThatStartWithB(words){
 }
 
 wordsThatStartWithB(['banana', 'cherry', 'orange']) // ['banana']
+wordsThatStartWithB(['brian', 'bobby', 'james'])
 
 
 
