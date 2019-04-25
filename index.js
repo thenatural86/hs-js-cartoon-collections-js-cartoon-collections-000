@@ -2,7 +2,7 @@ function dwarfRollCall (dwarves) {
   //initialze a new variable and set to empty array.
   let newArray = [];
  // iterat through array and push expression interpolation of i+1 and element at current index. 
-    for (let i = 0; i < dwarves.length; i++) {
+    for (let i = 0; i < dwarves.length / 2; i++) {
       newArray.push(`${i + 1}. ${dwarves[i]} ` );
  }
  //use .join() method on newArray to join and return a string.
